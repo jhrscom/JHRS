@@ -16,7 +16,7 @@ JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演�
 ## <a id="title01"/>简介
 1. JHRS是在工作中摸索的，并且搭建的一个WPF开发框架，但不是一个完整的框架，只是一个起步；相较于使用原生的WPF技术直接来开发项目，这个框架引入了一些现成的组件来规范、统一、并且提升开发效率，因为很多传统的管理系统，有着类似的功能，因此就可以做一些基础的封装，这样就可以避免团队成员各自实现相同的功能；同时也做了一些管理系统中使用功能比较多的WPF用户控件的封装，在真实项目中，可以自行扩展用户控件。
 2. 官方博客(首发)：[JHRS搭建系列文章](https://jhrs.com/2020/37391.html)
-3. 博客园：[JHRS搭建系列文章](https://jhrs.com/2020/37391.html)
+3. 博客园：[JHRS搭建系列文章](https://www.cnblogs.com/jessory/p/13590057.html)
 
 ## <a id="title02"/>相关技术
 1. 技术框架：.NET 5
@@ -29,7 +29,7 @@ JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演�
 ## <a id="title03"/>Description
 1. JHRS was groping at work and built a WPF development framework, but it is not a complete framework, but just a start; compared to using native WPF technology to develop projects directly, this framework introduces some ready-made components to standardize , Unify, and improve development efficiency. Because many traditional management systems have similar functions, some basic encapsulation can be done so as to prevent team members from implementing the same functions. At the same time, they have also been used in some management systems. The encapsulation of WPF user controls with more functions, in real projects, user controls can be extended by themselves.
 2. Official blog：[My Blog posts](https://jhrs.com/2020/37391.html)
-3. JHRS（cnblogs）：[Blog posts](https://jhrs.com/2020/37391.html)
+3. JHRS（cnblogs）：[Blog posts](https://www.cnblogs.com/jessory/p/13590057.html)
 
 ## <a id="title04"/>Related technology
 1. Technical framework: .NET 5
@@ -42,7 +42,7 @@ JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演�
 ## <a id="title05"/>簡介
 1. JHRS是在工作中摸索的，並且搭建的一個WPF開發框架，但不是一個完整的框架，只是一個起步；相較於使用原生的WPF技術直接來開發項目，這個框架引入了一些現成的組件來規範、統一、並且提升開發效率，因為很多傳統的管理系統，有著類似的功能，因此就可以做一些基礎的封裝，這樣就可以避免團隊成員各自實現相同的功能；同時也做了一些管理系統中使用功能比較多的WPF用戶控件的封裝，在真實項目中，可以自行擴展用戶控件。
 2. 部落格：[JHRS搭建系列文章](https://jhrs.com/2020/37391.html)
-3. 博客園：[JHRS搭建系列文章](https://jhrs.com/2020/37391.html)
+3. 博客園：[JHRS搭建系列文章](https://www.cnblogs.com/jessory/p/13590057.html)
 
 ## <a id="title06"/>相關技術
 1. 技術框架：.NET 5
