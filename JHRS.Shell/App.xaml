@@ -1,0 +1,22 @@
+﻿<prism:PrismApplication x:Class="JHRS.Shell.App" 
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                        xmlns:local="clr-namespace:JHRS.Shell" 
+                        xmlns:prism="http://prismlibrary.com/">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/JHRS.Wpf;component/Style/TextBoxStyle.xaml" />
+                <ResourceDictionary Source="/JHRS.Wpf;component/Style/ButtonStyle.xaml" />
+                <ResourceDictionary Source="/JHRS.Wpf;component/Style/PageIcon.xaml" />
+                <ResourceDictionary Source="/JHRS.Wpf;component/Style/ComboBox.xaml" />
+                <ResourceDictionary Source="/JHRS.Wpf;component/Resources/ConverterResources.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

@@ -1,0 +1,49 @@
+﻿<Page x:Class="JHRS.OutpatientSystem.Views.AddOrEditReservation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:prism="http://prismlibrary.com/" 
+      xmlns:b="http://schemas.microsoft.com/xaml/behaviors" 
+      prism:ViewModelLocator.AutoWireViewModel="True" 
+      xmlns:local="clr-namespace:JHRS.OutpatientSystem.Views" 
+      xmlns:dd="clr-namespace:JHRS.Core.Controls.DropDown;assembly=JHRS.Core"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddOrEditReservation" Background="White">
+    <Grid x:Name="maskContainer">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="叫號順序" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="20,0, 0, 0"/>
+            <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding Dto.Index}" VerticalAlignment="Center" Margin="20,0,0,0" MaxLength="50"></TextBox>
+            <Label Content="流水號" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Dto.BusinessNumber}" VerticalAlignment="Center" Margin="20, 0, 0, 0" MaxLength="50"/>
+            <Label Content="掛號時間" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <Calendar SelectedDate="{Binding Dto.ReservationTime}" Grid.Row="2"/>
+            <Label Content="患者姓名" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <TextBox Grid.Row="5" Grid.Column="0" Text="{Binding Dto.Name}" VerticalAlignment="Center" Margin="20, 0, 0, 0"  />
+            <Label Content="性別" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <dd:DictionaryComboBox Grid.Row="5" DictionaryType="性別" SelectedValue="{Binding Dto.Gender}" />
+            <Label Content="科室" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Dto.DepartmentName}" VerticalAlignment="Center" Margin="20, 0, 0, 0"  />
+            <Label Content="醫師" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <TextBox Grid.Row="7" Grid.Column="0" Text="{Binding Dto.DoctorName}" VerticalAlignment="Center" Margin="20, 0, 0, 0"  />
+            <Label Content="有效期" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="20, 0, 0, 0"/>
+            <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Dto.Expire}" VerticalAlignment="Center" Margin="20, 0, 0, 0"  />
+        </Grid>
+    </Grid>
+</Page>

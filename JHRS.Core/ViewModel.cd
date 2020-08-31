@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="JHRS.Core.ViewModels.BaseDialogPageViewModel">
+    <Position X="3" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAA=</HashCode>
+      <FileName>ViewModels\BaseDialogPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JHRS.Core.ViewModels.BaseManagePageViewModel">
+    <Position X="11.25" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAECAAAAAAGCIAYAABAAAAIABAAAAQI=</HashCode>
+      <FileName>ViewModels\BaseManagePageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JHRS.Core.ViewModels.BaseViewModel">
+    <Position X="6.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAQAAgIQAQAAAAAAAAEgAAAAAAQAICAQIAMAQAI=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

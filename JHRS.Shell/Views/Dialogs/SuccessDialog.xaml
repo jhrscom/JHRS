@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="JHRS.Shell.Views.Dialogs.SuccessDialog" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:prism="http://prismlibrary.com/" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             Height="70" 
+             prism:ViewModelLocator.AutoWireViewModel="True" 
+             xmlns:dialogs="clr-namespace:JHRS.Shell.Views.Dialogs;assembly=JHRS.Shell">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding CloseDialogCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <prism:Dialog.WindowStyle>
+        <Style TargetType="{x:Type Window}">
+            <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterScreen" />
+            <Setter Property="Window.ShowInTaskbar" Value="False" />
+            <Setter Property="Window.SizeToContent" Value="WidthAndHeight" />
+            <Setter Property="Window.WindowStyle" Value="None" />
+        </Style>
+    </prism:Dialog.WindowStyle>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Margin="15,-10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/images/success.png" Height="50" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="HighQuality" />
+        <TextBlock Margin="8,-10,45,0" Grid.Column="1" VerticalAlignment="Center" FontSize="15" FontFamily="Open Sans" Text="{Binding Message}" />
+    </Grid>
+</UserControl>

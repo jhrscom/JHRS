@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="JHRS.Core.Controls.Layouts.FunctionArea" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:JHRS.Core.Controls.Layouts" 
+             xmlns:region="clr-namespace:JHRS.Constants;assembly=JHRS" 
+             xmlns:prism="http://prismlibrary.com/" Loaded="UserControl_Loaded">
+    <Grid>
+        <WrapPanel VerticalAlignment="Top">
+            <ContentControl Name="queryRegin" prism:RegionManager.RegionName="{x:Static region:RegionNames.QueryRegin}" />
+            <Button Name="btnQuery" Content="查询" Margin="20,0,0,0" Command="{Binding QueryCommand}" />
+        </WrapPanel>
+        <WrapPanel Name="functionArea" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Name="btnNew" Content="新建" Style="{StaticResource MaterialDesignRaisedAccentButton}" Command="{Binding AddCommand}" />
+        </WrapPanel>
+    </Grid>
+</UserControl>

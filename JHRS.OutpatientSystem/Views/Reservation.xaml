@@ -1,0 +1,54 @@
+﻿<Page x:Class="JHRS.OutpatientSystem.Views.Reservation" 
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JHRS.OutpatientSystem.Views" 
+      xmlns:prism="http://prismlibrary.com/" 
+      xmlns:b="http://schemas.microsoft.com/xaml/behaviors" 
+      prism:ViewModelLocator.AutoWireViewModel="True" 
+      xmlns:f="clr-namespace:JHRS.Core.Controls.Layouts;assembly=JHRS.Core" 
+      xmlns:p="clr-namespace:JHRS.Core.Controls.DataGrids;assembly=JHRS.Core" 
+      xmlns:c="clr-namespace:JHRS.Core.Controls.DropDown;assembly=JHRS.Core" 
+      x:Name="page" 
+      Title="Reservation" Background="#FFFFFFFF">
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="Loaded" >
+            <b:InvokeCommandAction Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=page}" />
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+    <Page.Resources>
+        <DataTemplate x:Key="Status">
+            <c:StatusComboBox Name="cboStatus" SelectedValue="{Binding Status, Mode=TwoWay, UpdateSourceTrigger=Explicit,Converter={StaticResource EnumToIntConverter}}">
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="SelectionChanged" >
+                        <b:InvokeCommandAction Command="{Binding DataContext.SelectionChangedCommand,RelativeSource={RelativeSource AncestorType=Page}}" CommandParameter="{Binding ElementName=cboStatus}"/>
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
+            </c:StatusComboBox>
+        </DataTemplate>
+        <DataTemplate x:Key="OperationKey">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Name="btnEdit" Content="編輯" Background="#00FFFFFF" Style="{StaticResource MaterialDesignOutlinedButton}" Command="{Binding DataContext.EditCommand, RelativeSource={RelativeSource AncestorType=Page}}" CommandParameter="{Binding Path=DataContext, ElementName=btnEdit}" />
+                <Button Name="btnView" Content="詳情" Margin="10,0,0,0" ToolTip="详情" Command="{Binding DataContext.ViewDetailsCommand, RelativeSource={RelativeSource AncestorType=Page}}" CommandParameter="{Binding Path=DataContext, ElementName=btnView}" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid VerticalAlignment="Top">
+            <f:FunctionArea AddButtonText="新增預約" />
+        </Grid>
+        <Grid Name="maskContainer" Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <p:PagingDataGrid Name="ucDataGrid" OperatingKey="OperationKey" OperatingWidth="150*" EnableSelectAll="True" PageData="{Binding PageData}" PagingData="{Binding PagingData}" />
+        </Grid>
+    </Grid>
+</Page>

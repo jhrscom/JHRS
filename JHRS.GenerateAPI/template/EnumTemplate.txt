@@ -1,0 +1,21 @@
+﻿// -------------------------------------------------------------------------
+//  <copyright file="$类名称$.cs" company="江湖人士（jhrs.com）">
+//      Copyright (c) 2020-2050 jhrs.com. All rights reserved.
+//  </copyright>
+//  <site>https://jhrs.com</site>
+//  <last-editor>自动化工具生成的枚举类（CloudH）</last-editor>
+//  <last-date>$当前时间$</last-date>
+// -------------------------------------------------------------------------
+
+using System.ComponentModel;
+
+namespace JHRS.Core.Enums.$模块名称$
+{
+    /// <summary>
+    /// $类注释$
+    /// </summary>
+    public enum $类名称$
+    {
+$属性$
+    }
+}

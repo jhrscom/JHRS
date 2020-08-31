@@ -1,0 +1,26 @@
+﻿// -------------------------------------------------------------------------
+//  <copyright file="$类名称$.cs" company="江湖人士（jhrs.com）">
+//      Copyright (c) 2020-2050 jhrs.com. All rights reserved.
+//  </copyright>
+//  <site>https://jhrs.com</site>
+//  <last-editor>自动化工具生成的实体类（CloudH）</last-editor>
+//  <last-date>$当前时间$</last-date>
+// -------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+$引用空间$
+
+namespace JHRS.Core.Models.$模块名称$
+{
+    /// <summary>
+    /// $类注释$
+    /// </summary>
+    public partial class $类名称$
+    {
+$属性$
+    }
+}

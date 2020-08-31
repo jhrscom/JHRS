@@ -1,0 +1,63 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:local="clr-namespace:JHRS.Wpf.Style">
+  <Style x:Key="JHRSButton" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="#FF008000" />
+    <Setter Property="Foreground" Value="#FFFFFFFF" />
+    <Style.Triggers>
+      <Trigger Property="UIElement.IsMouseOver" Value="True">
+        <Setter Property="Background" Value="#2E74D3" />
+      </Trigger>
+      <Trigger Property="IsPressed" Value="True">
+        <Setter Property="Background" Value="#2E74D3" />
+      </Trigger>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="Background" Value="#CCCCCC" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  <Style x:Key="Button.Confirm" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="#4D46FF" />
+    <Setter Property="Foreground" Value="#DAD9FF" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Border Name="border" CornerRadius="15" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+            <ContentPresenter Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="Button.IsDefaulted" Value="true">
+              <Setter TargetName="border" Value="{DynamicResource SystemColors.HighlightBrushKey}" Property="Border.BorderBrush" />
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver" Value="true">
+              <Setter TargetName="border" Property="Border.Background" Value="#007ABB" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+              <Setter TargetName="border" Property="Border.Background" Value="#008ABA" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="Button.Cancel" TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="#F5F6FA" />
+    <Setter Property="Foreground" Value="#9098A2" />
+    <Setter Property="BorderBrush" Value="#9098A2" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Border Name="border" CornerRadius="15" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+            <ContentPresenter Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="Button.IsDefaulted" Value="true">
+              <Setter TargetName="border" Value="{DynamicResource SystemColors.HighlightBrushKey}" Property="Border.BorderBrush" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+</ResourceDictionary>
