@@ -58,3 +58,4 @@ JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演�
 	[4]: #title04
 	[5]: #title05
 	[6]: #title06
+![image](https://img.hotbests.com/2021/12/image-5.png)
