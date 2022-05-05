@@ -4,6 +4,11 @@ JHRS WPF framework is used to demonstrate how to build a development framework u
 JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演示框架僅提供一個想法。如果將其應用於實際項目，則需要自己完成更多功能。
 # 
 
+## 资源推荐
+1. [国外VPS网](https://guowaivps.org) 、[国外便宜Windows VPS推荐](https://guowaivps.org/guowai-pianyi-windows-vps-tuijian/)
+2. [国外VPN](https://gbtcs.com)
+3. [Code Life](https://znlive.com)
+
 ﻿# JHRS version 0.1
 
  - [简介][1]
@@ -58,4 +63,3 @@ JHRS WPF框架用於演示如何使用wpf和xamarin構建開發框架。該演�
 	[4]: #title04
 	[5]: #title05
 	[6]: #title06
-![image](https://img.hotbests.com/2021/12/image-5.png)
